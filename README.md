@@ -29,17 +29,16 @@ import Device from 'device.js';
 const device = new Device(ua1);
 const device2 = new Device(ua2);
 ```
-##以上为官网写法，而现实中的使用inangular2/4,因挖掘其代码，是以函数的写法...
+##更多设备
 ```
 import * as device from "device.js";
 
-let _device = device();
-if (_device.ios()) {
-		var video = [data.UrlStreamHls];
-} else if (_device.android()) {
-		var video = [data.UrlStreamFlv];
+
+if (device.ios) {
+   
+} else if (device.android) {
+   
 } else {
-		var video = [data.UrlStreamRtmp];
 }
 ```
 
